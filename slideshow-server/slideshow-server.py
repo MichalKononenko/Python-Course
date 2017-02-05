@@ -10,7 +10,7 @@ def hello():
 @app.route('/lectures/0', methods=["GET"])
 def get_lecture_0():
     return send_file( 
-        '../lectures/lecture_0_course_outline_and_installation/slideshow.html'
+        '../lectures/lecture_0_introduction/slideshow.html'
     )
 
 @app.route('/static/<path:filename>')
