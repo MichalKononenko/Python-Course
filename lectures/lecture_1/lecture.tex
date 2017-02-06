@@ -1,0 +1,56 @@
+Last lecture, we covered the generalities about this course, and what it
+means to compute. Today, we will be discussing some of the history behind 
+computer science, and how Python came to be. Being released in 1990, Python
+is far from the first programming language ever invented. Many of its design
+choices were influenced by or responses to the design decisions of previous
+languages. 
+
+\subsection{A History of Computing}
+One of the first applications of computers was approximating numerical
+solutions to equations. In most situations that you will encounter in 
+engineering, finding explicit solutions to equations might prove extremely 
+time-consuming, and, in fact, not very useful. What is the point of solving an
+equation to the twentieth decimal place if you have no means of measuring that
+your solution matches up to the real world? Why bother knowing the exact
+maximum length of a span if your manufacturing tolerances account for it
+already? By trading off error in the solution, equations that don't have a
+closed-form solution can acquire straightforward numerical solutions.
+
+Indeed, before the term ``computer'' referred to a machine, it referred to a
+job. Running numbers would have been the job of junior scientists and
+engineers. The problem with numerical methods was that they were tedious, and
+error-prone. Mechanical aids such as adding machines and slide rules were 
+prevalent, as well as books and tables filled with useful functions, that
+helped deal with some errors, and one could always build a scale model to test
+out their solution, but these aids differed from computers in a very
+fundamental way. To understand this, we have to consider another mathematical
+project, and its state at the turn of the $20^{th}$ century.
+
+\subsubsection{Hilbert, Church, Turing, and Computability}
+
+While the ultraviolet catastrophe and experiments involving the photoelectric
+effect were throwing monkey wrenches into what we now call classical physics,
+mathematicians were dealing with crises of their own. Mathematicians became
+interested in establishing all of math as a result of a complete, independent,
+and self-consistent set of axioms. \cite{zach_hilberts_2007}. Finding these
+axioms would allow new math theorems to be discovered not by intuition or some
+uniquely human ``reasoning'', but by following the logical relations from
+these axioms. It would also mean that any well-posed question would have a
+mathematical answer? Is the Goldbach Conjecture true? Answered. What about the
+Collatz Conjecture? Done. When provided with the correct axioms, such a theory
+would be able to predict, in principle, the outcome of any experiment. Every
+possible question that could be asked would have either a ``yes'' or ``no''
+answer.
+
+Well, it's too bad that such a set of axioms doesn't exist, and this is where
+Alonzo Church came into the picture. His work, in conjunction with a PhD 
+student of his, showed that there is no self-consistent solution to the
+question ``does an algorithm halt?'' In doing so, Chuch and his student 
+created a mathematical model of a ``universal machine;'' one that could
+implement any computable procedure. The student's name was Alan Turing. 
+
+A Turing machine consists of a set of symbols on a ``tape'' of memory, a
+read-write ``head'' that can read and overwrite the symbol on a particular spot
+in the tape, and a ``control'' that can move the head left or right on the tape
+depending on a control.
+
