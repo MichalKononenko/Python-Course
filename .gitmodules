@@ -1,0 +1,3 @@
+[submodule "slideshow-server/static/reveal.js"]
+	path = slideshow-server/static/reveal.js
+	url = https://github.com/hakimel/reveal.js.git
